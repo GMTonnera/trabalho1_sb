@@ -1,17 +1,17 @@
 #include<bits/stdc++.h>
 #include<iostream>
 
-#include "Translator.cpp"
+#include "Assembler.cpp"
 
 using namespace std;
 
 int main(int argc, char* argv[]){
 
-    // Criar objeto Translator    
-    Translator montador = Translator();
+    // Criar objeto Assembler    
+    Assembler montador = Assembler();
 
     // Traduzir o arquivo passado pelo terminal
-    montador.translate(argv[1]);
+    montador.assemble(argv[1]);
 
 
 
