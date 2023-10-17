@@ -1,5 +1,6 @@
 *.exe
 *.txt
 *.asm
-*.obj
+*.OBJ
 *.pre
+bin/
