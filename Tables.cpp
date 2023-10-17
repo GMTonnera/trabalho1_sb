@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -12,13 +12,12 @@ unordered_map<string, vector<int>> OPCODE_TABLE = {
     {"jmpn", {6, 2, 1}},
     {"jmpp", {7, 2, 1}},
     {"jmpz", {8, 2, 1}},
-    {"copy", {9, 3, 1}},
+    {"copy", {9, 3, 2}},
     {"load", {10, 2, 1}},
     {"store", {11, 2, 1}},
     {"input", {12, 2, 1}},
     {"output", {13, 2, 1}},
-    {"stop", {14, 1, 0}}
-};
+    {"stop", {14, 1, 0}}};
 
 // {{"diretiva", {espaço_memória, argumentos}}}
 unordered_map<string, vector<int>> DIRECTIVE_TABLE = {
@@ -26,16 +25,22 @@ unordered_map<string, vector<int>> DIRECTIVE_TABLE = {
     {"space", {1, 1}},
 };
 
-int directive_subroutine(string directive, int argument){
+int directive_subroutine(string directive, int argument)
+{
     /*
     A diretiva const coloca o argumento no local da memória,
     então ocupa apenas 1 posição.A diretiva space reserva o
     número de espaços de memória indicados pelo argumento,
     então ocupa argumento posiçõs.
-    */ 
-    if(directive == "const"){
+    */
+    // Verificar se é a diretiva const
+    if (directive == "const")
+    {
         return 1;
-    } else{
+    }
+    else
+    {
+        // Se não, é a diretiva space
         return argument;
     }
 }
