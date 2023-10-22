@@ -1,17 +1,16 @@
 #include <bits/stdc++.h>
-#include <iostream>
 
-#include "Assembler.cpp"
+#include "Simulator.cpp"
 
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    // Criar objeto Assembler
-    Assembler montador = Assembler();
+    // Criar objeto Simulator
+    Simulator simulador = Simulator();
 
     // Traduzir o arquivo passado pelo terminal
-    montador.assemble(argv[1]);
+    simulador.simulate(argv[1]);
 
     return 0;
 }

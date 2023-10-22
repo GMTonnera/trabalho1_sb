@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 #include <fstream>
 
-#include "Parser.cpp"
+#include "Tables.cpp"
 
 using namespace std;
 /*
