@@ -21,3 +21,6 @@ Para executar o simulador, rode o comando:
 onde (nome do arquivo) é o path do arquivo .OBJ.
 
 LINK DO REPOSITÓRIO: https://github.com/GMTonnera/trabalho1_sb
+
+GRUPO: Gustavo Mello Tonnera (211055272), David Herbert ().
+
