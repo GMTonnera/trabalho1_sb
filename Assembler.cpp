@@ -569,26 +569,26 @@ public:
         // Adquirir os tokens do arquivo por linha
         this->extract_text_from_file(file_name);
 
-        cout << this->data_section.first << " " << this->data_section.second << "\n";
-        cout << this->text_section.first << " " << this->text_section.second << "\n";
-        this->show_tokens1();
+        // cout << this->data_section.first << " " << this->data_section.second << "\n";
+        // cout << this->text_section.first << " " << this->text_section.second << "\n";
+        // this->show_tokens1();
 
-        cout << "==============================================\n";
+        // cout << "==============================================\n";
         this->prepare_tokens();
 
-        this->show_tokens2();
-        cout << "==============================================\n";
+        // this->show_tokens2();
+        // cout << "==============================================\n";
 
         // Primeira passagem
         this->first_pass();
 
-        this->show_symbol_table();
-        cout << "==============================================\n";
+        // this->show_symbol_table();
+        // cout << "==============================================\n";
 
         // Segunda passagem
         this->second_pass();
 
-        this->show_obj_code();
+        // this->show_obj_code();
         if (!this->error)
         {
             this->make_obj_file(file_name.substr(0, file_name.find('.')));
